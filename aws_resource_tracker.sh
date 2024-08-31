@@ -28,4 +28,12 @@ aws lambda list-functions
 #list IAM users
 echo "Print list of IAM users"
 aws iam list-users
+ 
+
+
+#can automate using cronjob
+#Open crontab
+#crontab -e
+#Add cronjob
+#5 15 * * * /home/ubuntu/aws_resource_report.sh >> /home/ubuntu/aws_resource_report.log 2>&1
 
